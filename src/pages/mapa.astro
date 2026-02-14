@@ -1,0 +1,31 @@
+<div id="map" class="lg:w-96 lg:h-48 w-48 h-48"></div>
+
+<script>
+  import("leaflet").then((L) => {
+
+    const map = L.map("map").setView([19.504178, -96.888060], 100);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    let marker: L.Marker | null = null;
+
+    marker = L.marker([19.504178, -96.888060]).addTo(map);
+
+    // 📍 Obtener ubicación del usuario
+
+    // Permitir cambiar ubicación con click
+    map.on("click", (e: L.LeafletMouseEvent) => {
+      const { lat, lng } = e.latlng;
+
+      if (marker) {
+        marker.setLatLng([lat, lng]);
+      } else {
+        marker = L.marker([lat, lng]).addTo(map);
+      }
+
+      console.log("Nueva ubicación:", lat, lng);
+    });
+  });
+</script>

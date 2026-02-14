@@ -1,0 +1,17 @@
+<svg width="69" height="36" viewBox="0 0 69 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M41.6639 9.23984C55.8729 -3.43852 61.2741 -2.71608 67.1987 9.23984C68.5189 14.6026 69.6986 20.5665 67.1987 30.3155C64.6987 40.0645 41.7435 34.1498 41.6639 30.3155V9.23984Z" fill="#E2435B"/>
+<path d="M27 9.36953C12.791 -3.30883 7.38983 -2.58638 1.46525 9.36953C0.145023 14.7323 -1.03471 20.6962 1.46525 30.4452C3.9652 40.1942 26.9204 34.2795 27 30.4452V9.36953Z" fill="#E2435B"/>
+<rect x="26" y="9.12969" width="16" height="22" fill="#E2435B"/>
+<mask id="mask0_54_33" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="10" y="8" width="16" height="23">
+<rect x="10" y="8.12969" width="16" height="22" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_54_33)">
+<ellipse cx="25.5" cy="19.6297" rx="8.5" ry="7.5" fill="#67101A"/>
+</g>
+<mask id="mask1_54_33" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="42" y="8" width="16" height="23">
+<rect width="16" height="22" transform="matrix(-1 0 0 1 58 8.12969)" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_54_33)">
+<ellipse cx="8.5" cy="7.5" rx="8.5" ry="7.5" transform="matrix(-1 0 0 1 51 12.1297)" fill="#67101A"/>
+</g>
+</svg>

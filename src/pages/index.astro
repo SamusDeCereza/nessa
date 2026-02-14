@@ -1,0 +1,211 @@
+---
+import "../styles/global.css";
+import Mapa from "./mapa.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/monio.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Zoquete 🩷</title>
+
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/leaflet/dist/leaflet.css"
+		/>
+
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/leaflet/dist/leaflet.css"
+		/>
+
+	</head>
+	<body class="w-screen h-screen">
+
+		
+
+
+		<p style="display: none;">
+		VALENTINES HEARTS
+		</p>
+
+		<style>
+			/* customizable heart styling */
+			.heart {
+			color: #F75C7B;
+			font-size: 2em;
+			font-family: Arial, sans-serif;
+			text-shadow: 0 0 5px #ffffff;
+			}
+			
+
+			@-webkit-keyframes hearts-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes hearts-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes hearts-fall{0%{top:-10%}100%{top:100%}}@keyframes hearts-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.heart{position:fixed;top:-10%;z-index:9998;-webkit-animation-name:hearts-fall,hearts-shake;animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:hearts-fall,hearts-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.heart:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.heart:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.heart:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.heart:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.heart:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.heart:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.heart:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.heart:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.heart:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.heart:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.heart:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.heart:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+			</style>
+			<div class="hearts" aria-hidden="true">
+			<div class ="heart">
+				&#10084;
+			</div>
+			<div class ="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+				<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+				<div class="heart">
+			&#10084;
+			</div>
+			<div class="heart">
+			&#10084;
+			</div>
+		
+
+
+			<div class="bg-[url('bgHearts.jpg')]!
+			bg-cover
+			w-full h-full fixed top-0 left-0"></div>
+
+			<main class="min-h-screen min-w-screen flex lg:pt-64 justify-center items-center relative z-9998">
+
+
+				<dialog class="modal bg-none!" id="diag1">
+					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+
+						<h1 class="w-full text-center lg:text-2xl font-bold">Feliz día de San Valentín</h1>
+						<h2 class="w-full text-center lg:text-xl">¿Quieres ver un truco de magia?</h2>
+
+						<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btn1">Ver</button>							
+					</div>		
+				</dialog>
+
+				<dialog class="modal bg-none!" id="diag2">
+					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+
+						<h1 class="w-full text-center lg:text-2xl font-bold">¿Vives aquí?</h1>
+						<Mapa></Mapa>
+
+						<div class="w-full flex justify-center gap-3">
+							<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btnSi">Si</button>
+							<button class="btn bg-purple-300 border-0 rounded-xl text-black/70" id="btnNo">No</button>							
+						</div>
+					</div>		
+				</dialog>
+
+				<dialog class="modal bg-none!" id="diagSi">
+					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+
+						<h1 class="w-full text-center lg:text-2xl font-bold">Te jakie</h1>
+						<h2 class="w-full text-center lg:text-xl">Eso era todo, muejejeje.</h2>
+
+						<img src="kirby.webp" alt="" class="size-48">
+						<p class="w-full text-center">Graciaass ❤</p>
+
+					</div>		
+				</dialog>
+
+				<dialog class="modal bg-none!" id="diagNo">
+					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+
+						<h1 class="w-full text-center lg:text-2xl font-bold">Chin</h1>
+						<h2 class="w-full text-center lg:text-xl">Mándame tu dirección porfa.</h2>
+
+						<img src="kirby2.webp" alt="" class="size-48">
+
+					</div>		
+				</dialog>				
+
+			</main>
+
+			<script>
+				const diag1 = document.getElementById("diag1");
+
+				if(diag1){
+					diag1.showModal()
+				}
+
+				
+
+				document.addEventListener("DOMContentLoaded", () => {
+
+
+				const btn1 = document.getElementById("btn1");
+				btn1?.addEventListener("click", () => {
+					cambiarModal("diag1", "diag2")
+				});
+
+				const btnSi = document.getElementById("btnSi");
+				btnSi?.addEventListener("click", () => {
+					cambiarModal("diag2", "diagSi")
+				});
+
+				const btnNo = document.getElementById("btnNo");
+				btnNo?.addEventListener("click", () => {
+					cambiarModal("diag2", "diagNo")
+				});
+
+				async function cambiarModal(modal1: string, modal2: string){
+					const m1 = document.getElementById(modal1);
+
+					const m2 = document.getElementById(modal2);
+					if(m1 && m2){
+						m1.close();
+
+						setTimeout(() => {
+							m2.showModal();
+						}, 500);
+
+					}
+
+				}
+
+				});
+
+
+			</script>
+	</body>
+</html>
