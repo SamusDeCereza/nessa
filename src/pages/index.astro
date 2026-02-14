@@ -96,63 +96,78 @@ import Mapa from "./mapa.astro";
 
 
 				<dialog class="modal bg-none!" id="diag1">
-					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
-					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
-						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2  text-black/70">
+						<img src="cookie.png" alt="" class="absolute z-0 left-1/2 -top-1/2 size-64 -translate-x-1/2 drop-shadow-2xl">
+						<div class="bg-white rounded-xl py-16 w-full h-full z-1 flex flex-wrap gap-3 justify-center">
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+							<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
 
-						<h1 class="w-full text-center lg:text-2xl font-bold">Feliz día de San Valentín</h1>
-						<h2 class="w-full text-center lg:text-xl">¿Quieres ver un truco de magia?</h2>
+							<h1 class="w-full text-center lg:text-2xl font-bold">Feliz día de San Valentín</h1>
+							<h2 class="w-full text-center lg:text-xl">¿Quieres ver un truco de magia?</h2>
 
-						<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btn1">Ver</button>							
+							<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btn1">Ver</button>		
+						</div>					
 					</div>		
 				</dialog>
 
 				<dialog class="modal bg-none!" id="diag2">
-					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
-					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
-						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 text-black/70">
+						<img src="cookie.png" alt="" class="absolute z-0 left-1/2 -top-1/2 size-64 -translate-x-1/2 drop-shadow-2xl">
 
-						<h1 class="w-full text-center lg:text-2xl font-bold">¿Vives aquí?</h1>
-						<Mapa></Mapa>
+						<div class="bg-white rounded-xl py-16 w-full h-full z-1 flex flex-wrap gap-3 justify-center">
 
-						<div class="w-full flex justify-center gap-3">
-							<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btnSi">Si</button>
-							<button class="btn bg-purple-300 border-0 rounded-xl text-black/70" id="btnNo">No</button>							
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+							<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+
+							<h1 class="w-full text-center lg:text-2xl font-bold">¿Vives aquí?</h1>
+							<Mapa></Mapa>
+
+							<div class="w-full flex justify-center gap-3">
+								<button class="btn bg-red-300 border-0 rounded-xl text-black/70" id="btnSi">Si</button>
+								<button class="btn bg-purple-300 border-0 rounded-xl text-black/70" id="btnNo">No</button>							
+							</div>
 						</div>
+
 					</div>		
 				</dialog>
 
 				<dialog class="modal bg-none!" id="diagSi">
-					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
-					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
-						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 text-black/70">
+						<img src="cookie.png" alt="" class="absolute z-0 left-1/2 -top-1/2 size-64 -translate-x-1/2 drop-shadow-2xl">
+						
+						<div class="bg-white rounded-xl py-16 w-full h-full z-1 flex flex-wrap gap-3 justify-center">
 
-						<h1 class="w-full text-center lg:text-2xl font-bold">Te jakie</h1>
-						<h2 class="w-full text-center lg:text-xl">Eso era todo, muejejeje.</h2>
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+							<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
 
-						<img src="kirby.webp" alt="" class="size-48">
-						<p class="w-full text-center">Graciaass ❤</p>
+							<h1 class="w-full text-center lg:text-2xl font-bold">Te jakie</h1>
+							<h2 class="w-full text-center lg:text-xl">Eso era todo, muejejeje.</h2>
+
+							<img src="kirby.webp" alt="" class="size-48">
+							<p class="w-full text-center">Graciaass ❤</p>
+						</div>
 
 					</div>		
 				</dialog>
 
 				<dialog class="modal bg-none!" id="diagNo">
-					<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
-					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 bg-white rounded-xl flex flex-wrap gap-3 justify-center py-16 text-black/70">
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
-						<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
-						<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
+					<div class="relative mt-48 w-3/4 lg:h-7/12 h-1/2 text-black/70">
+						<img src="cookie.png" alt="" class="absolute z-0 left-1/2 top-1/4 -translate-y-3/4 size-64 -translate-x-1/2 drop-shadow-2xl">
 
-						<h1 class="w-full text-center lg:text-2xl font-bold">Chin</h1>
-						<h2 class="w-full text-center lg:text-xl">Mándame tu dirección porfa.</h2>
+						<div class="bg-white rounded-xl py-16 w-full h-full z-1 flex flex-wrap gap-3 justify-center">
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 top-8 -translate-x-1/2"></div>
+							<div class=" w-1/2 border-2 scale-190 border-red-300 border-dashed absolute z-1 left-1/2 bottom-8 -translate-x-1/2"></div>
+							<img src="monio.svg" alt="" class="absolute z-1 left-1/2 top-2 -translate-x-1/2">
 
-						<img src="kirby2.webp" alt="" class="size-48">
+							<h1 class="w-full text-center lg:text-2xl font-bold">Chin</h1>
+							<h2 class="w-full text-center lg:text-xl">Mándame tu dirección porfa.</h2>
+
+							<img src="kirby2.webp" alt="" class="size-48">
+						</div>
+						
 
 					</div>		
 				</dialog>				
